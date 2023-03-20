@@ -1,0 +1,77 @@
+#carouselFrontPage {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  justify-content: center;
+}
+
+/* Carousel configuration parameters */
+.carousel {
+  padding: 20px;
+  perspective: 2400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel > * {
+  flex: 0 0 auto;
+}
+.carousel figure {
+  margin: 0;
+  width: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  transform-origin: 50% 50% -900px;
+}
+.carousel figure .imgCarouselFrontPage {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px;
+  opacity: 0.9;
+}
+.carousel figure .imgCarouselFrontPage:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 50% 50% -900px;
+}
+.carousel figure .imgCarouselFrontPage:nth-child(2) {
+  transform: rotateY(0.7853981634rad);
+}
+.carousel figure .imgCarouselFrontPage:nth-child(3) {
+  transform: rotateY(1.5707963268rad);
+}
+.carousel figure .imgCarouselFrontPage:nth-child(4) {
+  transform: rotateY(2.3561944902rad);
+}
+.carousel figure .imgCarouselFrontPage:nth-child(5) {
+  transform: rotateY(3.1415926536rad);
+}
+.carousel figure .imgCarouselFrontPage:nth-child(6) {
+  transform: rotateY(3.926990817rad);
+}
+.carousel figure .imgCarouselFrontPage:nth-child(7) {
+  transform: rotateY(4.7123889804rad);
+}
+.carousel figure .imgCarouselFrontPage:nth-child(8) {
+  transform: rotateY(5.4977871438rad);
+}
+.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+.carousel nav button {
+  flex: 0 0 auto;
+  margin: 50px 30px;
+  cursor: pointer;
+  color: rgb(255, 251, 251);
+  background: black;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: 50px;
+}/*# sourceMappingURL=carousel.css.map */

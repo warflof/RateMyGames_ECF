@@ -1,0 +1,58 @@
+@layer utilities {
+    .content-auto {
+        content-visibility: auto;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');    
+
+}
+html{
+    background-color: #1E2925;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%2351855b' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23303a31' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%2347854c' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23202c25' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%2350904d' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%232f3732' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23579649' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%230f1e19' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23639f49' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%232a302e' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%236ea945' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%233e4140' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+fieldset{
+   border-style: solid;
+   border-color: aliceblue; 
+}
+
+h1, a, h2{
+    font-family: 'Questrial', sans-serif;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+    main {
+      flex-direction: column;
+    }
+    main section {
+      width: 100%;
+      margin-bottom: 0;
+    }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.scroll-container {
+    white-space: nowrap; /* Empêche les éléments de passer à la ligne */
+    overflow-x: auto; /* Affiche un scrollbar horizontal si nécessaire */
+    max-width: 100%; /* Définit la largeur maximale de la div */ ;
+    overflow: hidden;
+  }
+  
+  .scroll-container img {
+    display: inline-block; /* Empêche les images de passer à la ligne */
+    width: 150px; /* Définit la largeur de l'image */
+    height: 200px; /* Définit la hauteur de l'image */
+    padding : 10px;
+  }
